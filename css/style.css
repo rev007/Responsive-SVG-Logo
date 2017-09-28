@@ -1,0 +1,163 @@
+img,
+embed,
+object,
+video {
+  max-width: 100%
+}
+
+* {
+  font-family: "Lato", sans-serif; color: #2d3c49;
+}
+
+/*********************
+Base Element Styles
+*********************/
+
+header {
+  display: flex;
+}
+
+p {
+  font-size: 1.8em;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 200;
+}
+
+h2 {
+  color: #7d97ad;
+  margin-bottom: 0.3em;
+  margin-left: 0.2em;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+hr {
+  height: 2px;
+  border: 0;
+  margin-top: 0;
+  background-color: #7d97ad;
+}
+
+section {
+  display: flex;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/*********************
+Base Layout Styles
+*********************/
+
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.box1 {
+  width: 150px;
+  margin: auto 0;
+}
+
+.box2 {
+  /* remove company name on smaller screens */
+  width: 0;
+}
+
+.box3 {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0 auto auto;
+}
+
+.logo {
+  height: 72px;
+}
+
+.employee {
+  text-align: right;
+  margin: 0 0.2em;
+}
+
+.occupation {
+  text-align: right;
+  margin: 0 0.2em 0.3em 0.2em;
+}
+
+.hero {
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 600px;
+}
+
+.project-1 {
+  background-image: url(../img/placeholder360x200.png);
+}
+
+.project-2 {
+  background-image: url(../img/placeholder360x200.png);
+  margin: 5px 0;
+}
+
+.project-3 {
+  background-image: url(../img/placeholder360x200.png);
+}
+
+/*********************
+Media Queries
+*********************/
+
+@media screen and (min-width: 652px) {
+  /* display project titles below images */
+  section {
+    flex-direction: column;
+    justify-content: flex-end;
+    background-position: top;
+  }
+
+  /* show company name */
+  .box2 {
+    width: 200px;
+    padding: 20px 15px;
+    margin: auto 0;
+  }
+
+  /* flex row on larger screens */
+  .projects {
+    flex-direction: row;
+    height: 21vw;
+    max-height: 250px;
+  }
+
+  .project-1 {
+    margin-right: 10px;
+  }
+
+  .project-2 {
+    margin: 0 10px;
+  }
+
+  .project-3 {
+    margin-left: 10px;
+  }
+
+}
