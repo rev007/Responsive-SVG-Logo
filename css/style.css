@@ -6,12 +6,16 @@ video {
 }
 
 * {
-  font-family: "Lato", sans-serif; color: #2d3c49;
+	box-sizing: border-box;
 }
 
-/*********************
-Base Element Styles
-*********************/
+/* --------------------------
+  Base Element Styles
+--------------------------- */
+
+body {
+  font-family: "Lato", sans-serif; color: #2d3c49;
+}
 
 header {
   display: flex;
@@ -58,9 +62,9 @@ footer {
   text-align: center;
 }
 
-/*********************
-Base Layout Styles
-*********************/
+/* --------------------------
+  Base Layout Styles
+--------------------------- */
 
 .container {
   width: 90%;
@@ -69,23 +73,14 @@ Base Layout Styles
 }
 
 .box1 {
-  width: 150px;
-  margin: auto 0;
-}
-
-.box2 {
   /* remove company name on smaller screens */
   width: 0;
 }
 
-.box3 {
+.box2 {
   display: flex;
   flex-direction: column;
   margin: auto 0 auto auto;
-}
-
-.logo {
-  height: 72px;
 }
 
 .employee {
@@ -122,9 +117,50 @@ Base Layout Styles
   background-image: url(../img/placeholder360x200.png);
 }
 
-/*********************
-Media Queries
-*********************/
+/* --------------------------
+  Keyframes
+--------------------------- */
+
+@keyframes turnAndGrow {
+  0% {
+  transform: scale(1) rotate(0);
+  }
+  30% {
+    transform: scale(1.07) rotate(5deg);
+  }
+  60% {
+    transform: scale(1) rotate(0deg);
+  }
+  80% {
+    transform: scale(0.93) rotate(-5deg)
+  }
+}
+
+/* --------------------------
+  SVG Styles
+--------------------------- */
+
+.logo {
+  /*transform: scale(2) translate(14px, 4px); /* TODO: get rid of px if we can */
+  transform: scale(2) translate(24px, 8px); /* TODO: get rid of px if we can */
+}
+
+.company-name {
+  font-family: "chaparral-pro";
+  font-style: italic;
+  font-weight: 300;
+  /*font-size: 1.125em;*/
+}
+/*transform="translate(0 14.85)" font-size="18" fill="#333" font-family="ChaparralPro-LightIt, Chaparral Pro" font-style="italic"*/
+
+.flag {
+  transform-origin: 58px 3px;
+  animation: turnAndGrow .45s infinite;
+}
+
+/* --------------------------
+  Media Queries
+--------------------------- */
 
 @media screen and (min-width: 652px) {
   /* display project titles below images */
@@ -135,7 +171,7 @@ Media Queries
   }
 
   /* show company name */
-  .box2 {
+  .box1 {
     width: 200px;
     padding: 20px 15px;
     margin: auto 0;
