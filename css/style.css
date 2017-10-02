@@ -141,7 +141,6 @@ footer {
 --------------------------- */
 
 .logo {
-  /*transform: scale(2) translate(14px, 4px); /* TODO: get rid of px if we can */
   transform: scale(2) translate(24px, 8px); /* TODO: get rid of px if we can */
 }
 
@@ -151,7 +150,6 @@ footer {
   font-weight: 300;
   /*font-size: 1.125em;*/
 }
-/*transform="translate(0 14.85)" font-size="18" fill="#333" font-family="ChaparralPro-LightIt, Chaparral Pro" font-style="italic"*/
 
 .flag {
   transform-origin: 58px 3px;
