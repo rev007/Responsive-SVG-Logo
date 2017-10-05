@@ -140,6 +140,10 @@ footer {
   SVG Styles
 --------------------------- */
 
+.svg-box {
+  background: FloralWhite;
+}
+
 .logo {
   transform: scale(2) translate(24px, 8px); /* TODO: get rid of px if we can */
 }
@@ -149,6 +153,8 @@ footer {
   font-style: italic;
   font-weight: 300;
   /*font-size: 1.125em;*/
+  /*display: none;*/
+  /*visibility: hidden;*/
 }
 
 .flag {
