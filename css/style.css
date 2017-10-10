@@ -126,13 +126,13 @@ footer {
   transform: scale(1) rotate(0);
   }
   30% {
-    transform: scale(1.07) rotate(5deg);
+    transform: scale(1.03) rotate(3deg);
   }
   60% {
     transform: scale(1) rotate(0deg);
   }
   80% {
-    transform: scale(0.93) rotate(-5deg)
+    transform: scale(0.97) rotate(-3deg)
   }
 }
 
@@ -141,24 +141,22 @@ footer {
 --------------------------- */
 
 .svg-box {
-  background: FloralWhite;
+  width: 300px;
+  height: 100px;
 }
 
 .logo {
-  transform: scale(2) translate(24px, 8px); /* TODO: get rid of px if we can */
+  /* TODO: get rid of px if we can */
+  transform-origin: 95px 11px; /* moved to center of castle */
+  transform: scale(4);
 }
 
 .company-name {
-  font-family: "chaparral-pro";
-  font-style: italic;
-  font-weight: 300;
-  /*font-size: 1.125em;*/
-  /*display: none;*/
-  /*visibility: hidden;*/
+  visibility: hidden;
 }
 
 .flag {
-  transform-origin: 58px 3px;
+  transform-origin: 80px 6px;
   animation: turnAndGrow .45s infinite;
 }
 
@@ -166,12 +164,31 @@ footer {
   Media Queries
 --------------------------- */
 
-@media screen and (min-width: 652px) {
+@media screen and (min-width: 410px) {
+
+  .logo {
+    transform-origin: 105px 11px;
+    transform: scale(3);
+  }
+
+}
+
+@media screen and (min-width: 540px) {
+
   /* display project titles below images */
   section {
     flex-direction: column;
     justify-content: flex-end;
     background-position: top;
+  }
+
+  .logo {
+    transform-origin: 95px 11px;
+    transform: scale(1);
+  }
+
+  .company-name {
+    visibility: visible;
   }
 
   /* show company name */
