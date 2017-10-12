@@ -3,11 +3,11 @@
 
 ABOUT
 
-Web site for Martini Castle, LLC
+Responsive website portfolio template with an animated SVG logo
 
 HOW TO RUN
 
-1. n/a
+1. Load index.html from your favorite browser
 
 ### Getting started
 
