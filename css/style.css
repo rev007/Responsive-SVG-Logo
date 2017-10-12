@@ -72,11 +72,6 @@ footer {
   margin: auto;
 }
 
-.box1 {
-  /* remove company name on smaller screens */
-  width: 0;
-}
-
 .box2 {
   display: flex;
   flex-direction: column;
@@ -189,13 +184,6 @@ footer {
 
   .company-name {
     visibility: visible;
-  }
-
-  /* show company name */
-  .box1 {
-    width: 200px;
-    padding: 20px 15px;
-    margin: auto 0;
   }
 
   /* flex row on larger screens */
