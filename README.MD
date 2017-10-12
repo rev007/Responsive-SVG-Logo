@@ -3,7 +3,8 @@
 
 ABOUT
 
-Responsive website portfolio template with an animated SVG logo
+Responsive website portfolio template with an animated SVG logo. Typekit fonts are used
+and won't be visible, but you can go to martinicastle.com to see the complete site.
 
 HOW TO RUN
 
