@@ -1,18 +1,11 @@
-## Martini Castle
+## Martini Castle ##
+
 ## September 2017
 
-ABOUT
+### About ###
 
-Responsive website portfolio template with an animated SVG logo. Typekit fonts are used
-and won't be visible, but you can go to martinicastle.com to see the complete site.
+A responsive portfolio template with an animated SVG logo. Typekit fonts are used and won't be visible on your local machine if you don't have them installed. The site, including all of the fonts, can be viewed at martinicastle.com.
 
-HOW TO RUN
+### How to Run ###
 
 1. Load index.html from your favorite browser
-
-### Getting started
-
-1. n/a
-
-### Credits
-
