@@ -40,6 +40,10 @@ h4 {
   font-weight: 400;
 }
 
+a {
+  text-decoration: none;
+}
+
 hr {
   height: 2px;
   border: 0;
