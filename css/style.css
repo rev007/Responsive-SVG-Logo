@@ -47,16 +47,6 @@ hr {
   background-color: #7d97ad;
 }
 
-section {
-  display: flex;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-}
-
 footer {
   margin-top: 20px;
   text-align: center;
@@ -102,6 +92,16 @@ footer {
   flex-direction: column;
   justify-content: flex-start;
   height: 600px;
+}
+
+div[title] {
+  display: flex;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-1 {
@@ -175,13 +175,6 @@ footer {
 
 @media screen and (min-width: 540px) {
 
-  /* display project titles below images */
-  section {
-    flex-direction: column;
-    justify-content: flex-end;
-    background-position: top;
-  }
-
   .logo {
     transform-origin: 95px 11px;
     transform: scale(1);
@@ -196,6 +189,13 @@ footer {
     flex-direction: row;
     height: 21vw;
     max-height: 250px;
+  }
+
+  /* display project titles below images */
+  div[title] {
+    flex-direction: column;
+    justify-content: flex-end;
+    background-position: top;
   }
 
   .project-1 {
