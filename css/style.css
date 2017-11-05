@@ -40,10 +40,6 @@ h4 {
   font-weight: 400;
 }
 
-a {
-  text-decoration: none;
-}
-
 hr {
   height: 2px;
   border: 0;
@@ -85,6 +81,11 @@ footer {
 .employee {
   text-align: right;
   margin: 0 0.2em;
+}
+
+.my-website {
+  text-decoration: none;
+  color: inherit;
 }
 
 .occupation {
